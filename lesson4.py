@@ -8,9 +8,9 @@ value=input('введи целое число ')
 
 try:
     value=float(value)
-    result=value*2
+    result=1/value
     print(result)
-except:
-    print('число не может быть приведено к типу float')
+except (ZeroDivisionError,ValueError):   # ValueError: это комапнда для проверки ошибки
+    print('что-то пошло не так, попробуй еще')
     result=0
     print(result)
