@@ -1,9 +1,14 @@
-print(123)
+
 test_str = "qwertydjkfhawi7465$#&^&%"
-#
-# for symbol in test_str:
-#     if symbol.lower() not in "eyuioa" and symbol.isalpha():
-#     print (f"symbol: {symbol}")
+print(test_str)
+result = []
+for symbol in test_str:
+    if symbol.lower() not in "eyuioa" and symbol.isalpha():
+    #    print (f"symbol: {symbol}")
+        result.append(symbol)
+        print(result)
+    join_str ="_".join(result)
+    print(join_str)
 
 #tuple - кортеж, неизменяемый тип
 #list - список, изменяемый тип
@@ -26,5 +31,6 @@ new_list=list(my_tuple)
 new_tuple=tuple(my_list)
 print(type(new_tuple),new_tuple)
 print(type(new_list),new_list)#можем поменять кортеж и лист
+
 
 
