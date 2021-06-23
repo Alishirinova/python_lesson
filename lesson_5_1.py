@@ -64,4 +64,12 @@ max_symbol = max(number_str) #не работает для разных типо
 print(max_symbol) #нашли наибольшее число в переменной
 
 ##################7
+#как работать с сортировкой
+my_list = [1,2,3,-8,4]
+my_str ='qwerty'
+sorted_list = sorted(my_list,reverse=True) #reverse= определяет убывание
+print(sorted_list)
+sorted_str = sorted(my_str)
+print(sorted_str)
+# НУЛИ в переменной МОЖНО ОТСЛЕДИТЬ С ПОМОШЬЮ реверса
 
