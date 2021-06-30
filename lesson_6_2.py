@@ -31,3 +31,12 @@ difference =my_set_1.difference(my_set_2) #уникальные, неповто�
 print(difference)
 difference_2 = my_set_2.difference(my_set_1) #уникальные, неповторяющиеся элементы из my_set_2
 print(difference_2)
+
+########словарь: dict -не гарантирует порядок, все ключи уникальны
+# triangle = [[1,1,],[2,3],[4,-2]]
+# print(triangle[1][1])
+
+triangle={'A':{'x':1,'y':1},
+          'B':{'x':2,'y':3},
+          'C':{'x':4,'y':-2}}
+print(triangle['B']['y'])
