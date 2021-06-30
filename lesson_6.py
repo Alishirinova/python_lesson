@@ -40,3 +40,22 @@ print(id(result))
 
 
 ######### генератор списков - короткая запись цикла for
+folders = []
+for digit in range(1, 21):
+    folder=f'/tmp/{digit}'
+    folders.append(folder)
+print(folders)
+
+folders = [f'/tmp/{digit}'for digit in range(1, 21)] #аналог для действия выше
+print(folders)
+
+symbols = [ord(symbol) for symbol in 'eyuioa']
+print(symbols)
+
+alphabet = [chr(ord_index) for ord_index in range (ord('a'),ord('z')+1)]
+print(alphabet)
+
+alphabet = ''.join(alphabet)
+print(alphabet)
+
+
