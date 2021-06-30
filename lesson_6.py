@@ -47,6 +47,7 @@ for digit in range(1, 21):
 print(folders)
 
 folders = [f'/tmp/{digit}'for digit in range(1, 21)] #аналог для действия выше
+folders = [f'/tmp/{digit}'for digit in range(1, 21) if not digit % 3]
 print(folders)
 
 symbols = [ord(symbol) for symbol in 'eyuioa']
