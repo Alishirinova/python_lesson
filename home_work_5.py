@@ -21,16 +21,31 @@ print(result)
 
 my_list_1 = [1, 2, 3, 4, 6, 5, 7]
 my_list_2 = [10, 20, 30, 40, 50]
-my_result=[]
-for index in range (len(my_list_1)):
+my_result = []
+for index in range(len(my_list_1)):
     if not index % 2:
         symbol = my_list_1[index]
         my_result.append(symbol)
-for index in range (len(my_list_2)):
+for index in range(len(my_list_2)):
     if index % 2:
         symbol = my_list_2[index]
         my_result.append(symbol)
 print(my_result)
 
+# 4. Дан список my_list. СОЗДАТЬ НОВЫЙ список new_list у которого первый элемент из my_list
+# стоит на последнем месте. Если my_list [1,2,3,4], то new_list [2,3,4,1]
+my_list = [1, 2, 3, 4, 6, 5, 7]
+new_list = []
+index = my_list[0]
+new_list = my_list[1:]
+new_list.append(index)
+print(new_list)
 
+# 5.Дан список my_list. В ЭТОМ списке первый элемент переставить на последнее место.
+# [1,2,3,4] -> [2,3,4,1]. Пересоздавать список нельзя! (используйте метод pop)
+
+my_list = [1, 2, 3, 4, 5]
+last_value = my_list.pop(0)
+my_list.append(last_value)
+print(my_list)
 
