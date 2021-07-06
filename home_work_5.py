@@ -52,3 +52,15 @@ print(my_list)
 # 6. Дана строка в которой есть числа (разделяются пробелами).
 # Например "43 больше чем 34 но меньше чем 56". Найти сумму ВСЕХ ЧИСЕЛ (А НЕ ЦИФР) в этой строке.
 # Для данного примера ответ - 133. (используйте split и проверку isdigit)
+my_str = "43 больше чем 34 но меньше чем 56"
+word_list = my_str.split()
+num_list = []
+for word in word_list:
+    if word.isdigit():
+        num_list.append(int(word))
+n_list=sum(num_list)
+print(num_list)
+print(n_list)
+
+
+
