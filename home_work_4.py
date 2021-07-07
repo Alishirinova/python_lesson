@@ -21,10 +21,12 @@ print(my_list)
 
 ###################################################4)
 
-value = input('введите любое число: ')
-
-value_1 = float(value)**-1
-print(value_1,type(value_1))
+# value = input('введите любое число: ')
+# num_list = []
+#
+# word_list = value.split()
+# value_1 = float(value)**-1
+# print(value_1,type(value_1))
 
 
 
