@@ -21,13 +21,24 @@ print(my_list)
 
 ###################################################4)
 
-# value = input('введите любое число: ')
-# num_list = []
-#
-# word_list = value.split()
-# value_1 = float(value)**-1
-# print(value_1,type(value_1))
+value = input('введите любое число: ')
+try:
+    value = float(value)
+    result = value**-1
+except ValueError:
+    print('это не то что надо')
+except ZeroDivisionError:
+    print('введи не ноль')
+print(result)
 
+###################################################5)
+my_str = '0123456789'
+result =[]
+
+for symb_1 in my_str:
+    for symb_2 in my_str:
+        result.append(int(symb_1+symb_2))
+print(result)
 
 
 
