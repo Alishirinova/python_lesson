@@ -32,6 +32,7 @@ for symbol in my_str:
     else:
         str_4 += symbol
         # result = [symbol for symbol in my_str if symbol.isupper()]
+# print(my_str.swapcase()) #альтернативна всем нашим операциям
 print(str_4)  # поменять большые на маленькие и наоборт
 
 big_letters =[]
