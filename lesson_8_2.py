@@ -37,4 +37,5 @@ for product in products:
         product['price'] = product['price'] * 1.1 - 1
         print(products)
 
-
+#домашка 1- сделать список возростов  и по нему определить имена мин возраста
+# 2 - фото доски
