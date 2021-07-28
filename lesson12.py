@@ -42,6 +42,8 @@ import re
 
 my_string = 'sjhfLKWHD;Oi1354654531321351jxLKAKSMxklasM,210.0.7.0asjdhf;skjah sdjfksgfkj 200.3.11.200:5400 askjhflkjh'
 # tempfile = r'\d+'  # \d - любая цифра
+# tempfile = r'[0-9a-zA-ZА-Я]+'  # любой символ из заданного условия
+
 tempfile = r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'  # поможет споймать компинацию с точкой - в нашем случае айпи адрес
 result = re.findall(tempfile, my_string)
 print(result)
