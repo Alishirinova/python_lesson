@@ -23,6 +23,7 @@ def get_author(raw_quote):
 
 for reguest_number in range(10):
     # raw_quote = get_raw_quote() тут ошибка списать у учителя
+
     quote = get_quote(raw_quote)
 
 
